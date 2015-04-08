@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title>Trending start-ups</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+			<script type="text/javascript" src="libs/lodash/dist/lodash.min.js"></script>
+			<script type="text/javascript" src="libs/underscore.string/dist/underscore.string.min.js"></script>
+			<script type="text/javascript" src="app/js/app.js"></script>
+			<script type="text/javascript" src="app/js/controllers.js"></script>
+			<script type="text/javascript" src="app/js/services.js"></script>
+			<script type="text/javascript" src="app/js/filters.js"></script>
+			<script type="text/javascript" src="app/js/directives.js"></script>
+
+	</head>
+
+	<body>
+		<div ng-controller="jobs" class="container">
+		<form action="http://localhost:3000/api/postjobs" method="POST">
+
+<h1>Enter Job Details Here</h1>
+<br><br>
+<label>Company ID</label>
+<input type="text" name="company_id" placeholder=""  ng-model="newjob.company_id" autofocus />
+<br><br>
+<label>Job ID</label>
+<input type="text" name="job_id" placeholder="" ng-model="newjob.job_id" autofocus />
+<br><br>
+<label>Job Title</label>
+<input type="text" name="job_title" placeholder=""  autofocus />
+<br><br>
+<label>Job Location</label>
+<input type="text" name="job_location" placeholder=""  autofocus />
+<br><br>
+<label>Job Skills</label>
+<input type="text" name="job_skills" placeholder=""  autofocus />
+<br><br>
+<label>Job Studies</label>
+<input type="text" name="job_qualification" placeholder=""  autofocus />
+<br><br>
+<label>Job Languages</label>
+<input type="text" name="job_languages" placeholder=""  autofocus />
+<br><br>
+<label>Job Description</label>
+<input type="text" name="job_description" placeholder=""  autofocus />
+<br><br>
+<a href="display">
+<button type="submit">ADD</button>
+</a>
+</form>
+</div>
+
+
+
+
+
+</body>

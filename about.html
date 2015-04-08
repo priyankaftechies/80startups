@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title>Trending start-ups</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+			<script type="text/javascript" src="libs/lodash/dist/lodash.min.js"></script>
+			<script type="text/javascript" src="libs/underscore.string/dist/underscore.string.min.js"></script>
+			<script type="text/javascript" src="app/js/app.js"></script>
+			<script type="text/javascript" src="app/js/controllers.js"></script>
+			<script type="text/javascript" src="app/js/services.js"></script>
+			<script type="text/javascript" src="app/js/filters.js"></script>
+			<script type="text/javascript" src="app/js/directives.js"></script>
+
+	</head>
+
+	<body>
+		<div ng-controller="jobs" class="container">
+		<form action="http://localhost:3000/api/postabout" method="POST">
+
+<h1>Enter company details here</h1>
+<br><br>
+<label>Company ID</label>
+<input type="text" name="company_id" placeholder=""  ng-model="newpeople.company_id" autofocus />
+<br><br>
+<label>Company Description Heading</label>
+<input type="text" name="company_deschead" placeholder=""  ng-model="newpeople.company_deschead" autofocus />
+<br><br>
+<label>Company Description</label>
+<input type="text" name="company_desc" placeholder=""  ng-model="newpeople.company_desc" autofocus />
+<br><br>
+<label>Company Mission Heading</label>
+<input type="text" name="company_missionhead" placeholder=""  ng-model="newpeople.company_missionhead" autofocus />
+<br><br>
+<label>Company Mission</label>
+<input type="text" name="company_mission" placeholder=""  ng-model="newpeople.company_mission" autofocus />
+<br><br>
+<label>Enter Other Heading</label>
+<input type="text" name="company_otherhead" placeholder=""  ng-model="newpeople.company_otherhead" autofocus />
+<br><br>
+<label>Enter Other</label>
+<input type="text" name="company_other" placeholder=""  ng-model="newpeople.company_other" autofocus />
+<br><br>
+
+<button type="submit">ADD</button>
+
+</form>
+</div>
+
+
+
+
+
+</body>

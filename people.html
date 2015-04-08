@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title>Trending start-ups</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+			<script type="text/javascript" src="libs/lodash/dist/lodash.min.js"></script>
+			<script type="text/javascript" src="libs/underscore.string/dist/underscore.string.min.js"></script>
+			<script type="text/javascript" src="app/js/app.js"></script>
+			<script type="text/javascript" src="app/js/controllers.js"></script>
+			<script type="text/javascript" src="app/js/services.js"></script>
+			<script type="text/javascript" src="app/js/filters.js"></script>
+			<script type="text/javascript" src="app/js/directives.js"></script>
+
+	</head>
+
+	<body>
+		<div ng-controller="jobs" class="container">
+		<form action="http://localhost:3000/api/postpeople" method="POST">
+
+<h1>Enter Job Details Here</h1>
+<br><br>
+<label>Company ID</label>
+<input type="text" name="company_id" placeholder=""  ng-model="newpeople.company_id" autofocus />
+<br><br>
+<label>People ID</label>
+<input type="text" name="people_id" placeholder=""  ng-model="newpeople.people_id" autofocus />
+<br><br>
+<label>People Name</label>
+<input type="text" name="people_name" placeholder=""  ng-model="newpeople.people_name" autofocus />
+<br><br>
+<label>People Designation</label>
+<input type="text" name="people_designation" placeholder=""  ng-model="newpeople.people_designation" autofocus />
+<br><br>
+<label>People Quotes</label>
+<input type="text" name="people_quotes" placeholder=""  ng-model="newpeople.people_quotes" autofocus />
+<br><br>
+<label>People Profile Picture</label>
+<input type="text" name="people_profilepic" placeholder=""  ng-model="newpeople.people_profilepic" autofocus />
+<br><br>
+<label>People Description</label>
+<input type="text" name="people_desc" placeholder=""  ng-model="newpeople.people_profiledesc" autofocus />
+
+<button type="submit">ADD</button>
+
+</form>
+</div>
+
+
+
+
+
+</body>
