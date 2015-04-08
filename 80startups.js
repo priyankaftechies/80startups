@@ -11,6 +11,8 @@ var picture = require('./api/company_picture');
 
 var about= require('./api/company_about');
 
+var userlogin= require('./api/userlogin');
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -31,6 +33,9 @@ app.post('/api/postpicture',picture.addpicture);
 
 app.get('/api/listabout',about.getabout);
 app.post('/api/postabout',about.addabout);
+
+app.get('/api/listlogin',userlogin.getlogin);
+app.post('/api/postlogin',userlogin.addlogin);
 
 app.use('/web', express.static(__dirname + '/web'));
 

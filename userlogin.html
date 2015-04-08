@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title>Trending start-ups</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+			<script type="text/javascript" src="libs/lodash/dist/lodash.min.js"></script>
+			<script type="text/javascript" src="libs/underscore.string/dist/underscore.string.min.js"></script>
+			<script type="text/javascript" src="app/js/app.js"></script>
+			<script type="text/javascript" src="app/js/controllers.js"></script>
+			<script type="text/javascript" src="app/js/services.js"></script>
+			<script type="text/javascript" src="app/js/filters.js"></script>
+			<script type="text/javascript" src="app/js/directives.js"></script>
+
+	</head>
+
+	<body>
+		<div ng-controller="jobs" class="container">
+		<form action="http://localhost:3000/api/postlogin" method="POST">
+
+<h1>Enter Job Details Here</h1>
+<br><br>
+<label>User ID</label>
+<input type="text" name="user_id" placeholder=""  ng-model="newjob.user_id" autofocus />
+<br><br>
+<label>Enter Firstname</label>
+<input type="text" name="user_fname" placeholder=""  ng-model="newjob.user_fname" autofocus />
+<br><br>
+<label>Enter Lastname</label>
+<input type="text" name="user_lname" placeholder=""  ng-model="newjob.user_lname" autofocus />
+<br><br>
+<label>Enter Email ID</label>
+<input type="text" name="user_email" placeholder=""  ng-model="newjob.user_email" autofocus />
+<br><br>
+<label>Enter Mobile No</label>
+<input type="text" name="user_mobileno" placeholder=""  ng-model="newjob.user_mobileno" autofocus />
+<br><br>
+<label>Enter Password</label>
+<input type="text" name="user_password" placeholder=""  ng-model="newjob.user_password" autofocus />
+<br><br>
+<a href="display">
+<button type="submit">ADD</button>
+</a>
+</form>
+</div>
+
+
+
+
+
+</body>
