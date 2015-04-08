@@ -32,5 +32,7 @@ app.post('/api/postpicture',picture.addpicture);
 app.get('/api/listabout',about.getabout);
 app.post('/api/postabout',about.addabout);
 
+app.use('/web', express.static(__dirname + '/web'));
+
 app.listen(3000);
 console.log('Listening on port 3000...');
